@@ -1,0 +1,73 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 16px;
+  width: 280px;
+  transition: background 0.4s ease, color 0.4s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.moods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mood {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.mood:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#save-custom {
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#save-custom:hover {
+  background: #ddd;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body[data-mood="happy"] { background: linear-gradient(to bottom right, #fffbe6, #ffe0b2); color: #ff8c00; }
+body[data-mood="chill"] { background: linear-gradient(to bottom right, #e6f7ff, #ccf2ff); color: #007acc; }
+body[data-mood="focused"] { background: linear-gradient(to bottom right, #e8f0fe, #d0e3ff); color: #1a73e8; }
+body[data-mood="energetic"] { background: linear-gradient(to bottom right, #fff0f0, #ffd6d6); color: #ff5252; }
+body[data-mood="dark"] { background-color: #1e1e1e; color: #e0e0e0; }

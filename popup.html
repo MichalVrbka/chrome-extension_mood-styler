@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Styler</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="popup">
+    <h1>Mood Styler</h1>
+
+    <div class="moods" id="default-moods">
+      <button class="mood" data-mood="happy">😊 Happy</button>
+      <button class="mood" data-mood="chill">🌙 Chill</button>
+      <button class="mood" data-mood="focused">🧠 Focused</button>
+      <button class="mood" data-mood="energetic">⚡ Energetic</button>
+      <button class="mood" data-mood="dark">🌑 Dark</button>
+    </div>
+
+    <h2>🎨 Vlastní nálada</h2>
+    <label>Barva pozadí:</label>
+    <input type="color" id="custom-bg" value="#ffffff" />
+
+    <label>Barva textu:</label>
+    <input type="color" id="custom-text" value="#000000" />
+
+    <label>Barva pozadí rozhraní:</label>
+    <input type="color" id="custom-popup-bg" value="#ffffff" />
+
+    <button id="save-custom">💾 Uložit vlastní náladu</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
